@@ -7,10 +7,9 @@ body {
     width: auto;
     height: auto;
     margin: 0 1em 0 1em;
-    background-color: gray;
 }
 h1 {
-    color: blue;
+    color: rgb(0, 162, 255);
 }
 header {
     background-color: gray;
