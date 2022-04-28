@@ -20,7 +20,7 @@ h2 {
   font-size: 3.2em;
 }
 
-pli {
+p, li {
   font-size: 1.7em;
 }
 
@@ -35,7 +35,7 @@ header, footer {
 }
 
 h1, footer p {
-  margin: -70px;
+  margin: 0px;
 }
 
 h1 {
@@ -54,6 +54,8 @@ main p, main li {
 }
 
 img {
-  float: right
-  margin: 0 0;
+  float: right;
+  width: 150px;
+  height: 150px;
+  margin: 10px 0 10px 10px;
 }
