@@ -1,14 +1,14 @@
 html {
     font-family: 'Helvetica neue', Arial, 'sans serif';
     font-size: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 body {
     width: auto;
     height: auto;
     margin: 0 1em 0 1em;
-    background-color: rgb(80, 167, 207);
+    background-color: rgb(154, 217, 219);
 }
 h1 {
     color: rgb(0, 0, 0);
