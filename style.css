@@ -27,4 +27,9 @@ a:visited {
 a:hover {
     text-decoration: none;
 }
-
+h2 {
+    background-color: #015958;
+    height: 1em;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    color:rgb(255, 255, 255);
+}
