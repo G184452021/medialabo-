@@ -3,3 +3,18 @@ html {
     font-size: 20px;
     color: #000000;
 }
+body {
+    width: auto;
+    height: auto;
+    margin: 0 1em 0 1em;
+    background-color: #ffffff;
+}
+h1 {
+    background-color: #000000;
+    height: 2em;
+    margin: 0 0 0 0;
+    color: white;
+}
+table {
+    font-size: 150%;
+}
