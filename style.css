@@ -33,3 +33,7 @@ h2 {
     padding: 0.5em 0.5em 0.5em 0.5em;
     color:rgb(255, 255, 255);
 }
+h3 {
+    text-decoration: underline;
+    text-decoration-color: #015958;
+}
