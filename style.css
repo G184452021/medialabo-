@@ -29,11 +29,13 @@ a:hover {
 }
 h2 {
     background-color: #015958;
-    height: 1em;
-    padding: 0.5em 0.5em 0.5em 0.5em;
     color:rgb(255, 255, 255);
 }
 h3 {
+    background-color: #015958;
+    color:rgb(255, 255, 255);
+}
+h4 {
     text-decoration: underline;
     text-decoration-color: #015958;
 }
