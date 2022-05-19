@@ -7,9 +7,6 @@ let kaisu = 0;
 // 予想を4回実行する
 // 将来: ボタンを押したら， hantei() を呼び出すように修正する
 hantei();
-hantei();
-hantei();
-hantei();
 
 // ボタンを押した後の処理をする関数 hantei() の定義
 function hantei() {
@@ -34,3 +31,10 @@ function hantei() {
     kaisu = kaisu + 1;
 
 }
+
+let a = document.querySelector('span#kaisu');
+a.textContent = kaisu;
+let b = document.querySelector('span#kotae');
+b.textContent = kotae;
+let c = document.querySelector('span#hantei');
+c.textContent = hantei();
