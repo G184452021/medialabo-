@@ -17,6 +17,9 @@ h1 {
 }
 table {
     font-size: 130%;
+    margin: 1em 1em 1em 1em;
+    width: auto;
+    height: auto;
 }
 table, tr, td {
     border: 2px solid black;
