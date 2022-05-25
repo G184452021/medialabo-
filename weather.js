@@ -50,5 +50,8 @@ console.log(data.name);
 console.log(data.main.temp_max);
 console.log(data.main.temp_min);
 
+let td = document.querySelector('td#Beijing 北京');
+td.textContent = data.name;
+
 
 

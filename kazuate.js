@@ -29,12 +29,13 @@ function hantei() {
     }
     console.log('答えは'+kotae+'でした．すでにゲームは終わっています');
     kaisu = kaisu + 1;
-
+    
 }
-
 let a = document.querySelector('span#kaisu');
 a.textContent = kaisu;
-let b = document.querySelector('span#kotae');
+let b = document.querySelector('span#result');
 b.textContent = kotae;
-let c = document.querySelector('span#hantei');
-c.textContent = hantei();
+let c = document.querySelector('span#yoso');
+
+
+
