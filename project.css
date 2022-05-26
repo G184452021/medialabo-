@@ -10,7 +10,7 @@ body {
     background-color: #ffffff;
 }
 h1 {
-    background-color: rgba(99, 99, 208, 0.547);
+    background-color: rgba(109, 173, 233, 0.547);
     height: 2em;
     margin: 0 0 0 0;
     color: black;
@@ -20,7 +20,7 @@ table {
     margin: 1em 1em 1em 1em;
     width: auto;
     height: auto;
-    background-color: rgba(99, 99, 208, 0.547);
+    background-color: rgba(109, 173, 233, 0.547);
 }
 table, tr, td {
     border: 2px solid black;
