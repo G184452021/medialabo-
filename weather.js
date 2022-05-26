@@ -50,8 +50,15 @@ console.log(data.name);
 console.log(data.main.temp_max);
 console.log(data.main.temp_min);
 
-let td = document.querySelector('td#Beijing 北京');
-td.textContent = data.name;
+let a1 = document.querySelector('span#Beijing');
+a1.textContent = data.name;
 
+let n = document.querySelector('#kensaku');
+n.addEventListener('click', search);
+
+function search() {
+  let i = documentSelector('input[a="a"]');
+  let a = i.value;
+} 
 
 
