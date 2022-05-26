@@ -51,7 +51,13 @@ console.log(data.main.temp_max);
 console.log(data.main.temp_min);
 
 let a1 = document.querySelector('span#Beijing');
-a1.textContent = data.name;
+a1.textContent = [data.name];
+
+let a2 = document.querySelector('span#max')
+a2.textContent = [data.main.temp_max];
+
+let a3 = document.querySelector('span#min')
+a3.textContent = [data.main.temp_min];
 
 let n = document.querySelector('#kensaku');
 n.addEventListener('click', search);
