@@ -28,7 +28,7 @@ function hantei() {
             a.textContent = '正解です．おめでとう!';
             console.log('正解です．おめでとう!');
             kaisu = 4;
-        } else if (yoso !== kotae && kaisu === 4) {
+        } else if (yoso !== kotae && kaisu === 3) {
             let b = document.querySelector('span#result');
             b.textContent = 'まちがい．残念でした答えは'+kotae+'です．';
             console.log('まちがい．残念でした答えは'+kotae+'です．');
