@@ -59,12 +59,21 @@ a2.textContent = [data.main.temp_max];
 let a3 = document.querySelector('span#min')
 a3.textContent = [data.main.temp_min];
 
-let n = document.querySelector('#kensaku');
-n.addEventListener('click', search);
 
-function search() {
-  let i = documentSelector('input[a="a"]');
-  let a = i.value;
-} 
+let m = document.querySelector('#sendRequest');
+m.addEventListener('click', sendRequest);
 
+function sendRequest() {
+  let i = document.querySelector('input[key="key"]');
+  let key = i.value;
+  let url = 'https://www.nishita-lab.org/web-contents/jsons/openweather/{key}.json';
+}
 
+function showResult(resp) {
+  let data = resp.data;
+
+  if (typeof data === 'string') {
+      data = JSON.parse(data);
+  }
+  console.log(data);
+}
