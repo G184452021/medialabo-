@@ -4,15 +4,35 @@
     <meta charset="utf-8">
     <title>Project</title>
     <link rel="stylesheet" href="project.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
     <script src="weather.js" defer></script>
   </head>
 
   <body>
     <h1>世界の天気</h1>
     <label for="kensaku"></label> 
-    <input type="text" key="key" size="10">
-    <button id="sendRequest">検索</button>
+    <input type="text" key="key" size="15">
+    <button id="print">検索</button>
       
+    
+    <table>
+      <thead>
+        <tr>
+          <th colspan="4"><span id="city_name"></span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>都市名</strong></td><td><strong>天気</strong></td><td><strong>最高気温</strong></td><td><strong>最低気温</strong></td>
+        </tr>
+        <tr>
+          <td><span id ='name'></span></td><td><span id="weather"></span></td><td><span id = 'temp_max'></span></td><td><span id = 'temp_min'></span></td>
+        </tr>
+      </tbody>
+    </table>
+    
+    
+    
     <table>
         <thead>
           <tr>

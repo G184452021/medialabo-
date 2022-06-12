@@ -60,13 +60,18 @@ let a3 = document.querySelector('span#min')
 a3.textContent = [data.main.temp_min];
 
 
-let m = document.querySelector('#sendRequest');
+let m = document.querySelector('button#print');
 m.addEventListener('click', sendRequest);
 
 function sendRequest() {
   let i = document.querySelector('input[key="key"]');
-  let key = i.value;
-  let url = 'https://www.nishita-lab.org/web-contents/jsons/openweather/{key}.json';
+  let id = i.value;
+  let url = 'https://www.nishita-lab.org/web-contents/jsons/openweather/'+id+'.json';
+
+  axios.get(url)
+      .then(showResult)
+      .catch(showError)
+      .then(finish);
 }
 
 function showResult(resp) {
@@ -75,5 +80,22 @@ function showResult(resp) {
   if (typeof data === 'string') {
       data = JSON.parse(data);
   }
-  console.log(data);
+  let x = document.querySelector('span#city_name');
+  x.textContent = [data.name];
+  let x1 = document.querySelector('span#name');
+  x1.textContent = [data.name];
+  let x2 = document.querySelector('span#weather');
+  x2.textContent = data.weather.escription;
+  let x3 = document.querySelector('span#temp_max');
+  x3.textContent = [data.main.temp_max];
+  let x4 = document.querySelector('span#temp_min');
+  x4.textContent = [data.main.temp_min];
+}
+
+function showError(err) {
+  console.log(err);
+}
+
+function finish() {
+  console.log('Ajax 通信が終わりました');
 }
