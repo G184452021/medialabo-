@@ -50,7 +50,7 @@ console.log(data.name);
 console.log(data.main.temp_max);
 console.log(data.main.temp_min);
 
-let a1 = document.querySelector('span#Beijing');
+/*let a1 = document.querySelector('span#Beijing');
 a1.textContent = [data.name];
 
 let a2 = document.querySelector('span#max')
@@ -58,6 +58,7 @@ a2.textContent = [data.main.temp_max];
 
 let a3 = document.querySelector('span#min')
 a3.textContent = [data.main.temp_min];
+*/
 
 
 let m = document.querySelector('button#print');
@@ -66,6 +67,33 @@ m.addEventListener('click', sendRequest);
 function sendRequest() {
   let i = document.querySelector('input[key="key"]');
   let id = i.value;
+  
+  if (id === "カイロ") {
+    id = '360630';
+  } else if (id === "モスクワ") {
+    id = '524901';
+  } else if (id === "ヨハネスブルク") {
+    id = '993800';
+  } else if (id === "北京") {
+    id = '1816670';
+  } else if (id === "東京") {
+    id = '1850147';
+  } else if (id === "シンガポール") {
+    id = '1880252';
+  } else if (id === "シドニー") {
+    id = '2147714';
+  } else if (id === "ロンドン") {
+    id = '2643743';
+  } else if (id === "パリ") {
+    id = '2968815';
+  } else if (id === "リオデジャネイロ") {
+    id = '3451189';
+  } else if (id === "ニューヨーク") {
+    id = '5128581';
+  } else if (id === "ロサンゼルス") {
+    id = '5368361';
+  }
+  
   let url = 'https://www.nishita-lab.org/web-contents/jsons/openweather/'+id+'.json';
 
   axios.get(url)
@@ -86,10 +114,13 @@ function showResult(resp) {
   x1.textContent = [data.name];
   let x2 = document.querySelector('span#weather');
   x2.textContent = data.weather.escription;
-  let x3 = document.querySelector('span#temp_max');
-  x3.textContent = [data.main.temp_max];
-  let x4 = document.querySelector('span#temp_min');
-  x4.textContent = [data.main.temp_min];
+
+  let x3 = document.querySelector('span#temp');
+  x3.textContent = [data.main.temp];
+  let x4 = document.querySelector('span#temp_max');
+  x4.textContent = [data.main.temp_max];
+  let x5 = document.querySelector('span#temp_min');
+  x5.textContent = [data.main.temp_min];
 }
 
 function showError(err) {
