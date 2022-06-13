@@ -110,17 +110,24 @@ function showResult(resp) {
   }
   let x = document.querySelector('span#city_name');
   x.textContent = [data.name];
+  /*
   let x1 = document.querySelector('span#name');
   x1.textContent = [data.name];
+  */
   let x2 = document.querySelector('span#weather');
-  x2.textContent = data.weather.escription;
+  x2.textContent = [data.weather[0].description];
 
   let x3 = document.querySelector('span#temp');
-  x3.textContent = [data.main.temp];
+  x3.textContent = [data.main.temp] + '℃';
+
   let x4 = document.querySelector('span#temp_max');
-  x4.textContent = [data.main.temp_max];
+  x4.textContent = [data.main.temp_max] + '℃';
+
   let x5 = document.querySelector('span#temp_min');
-  x5.textContent = [data.main.temp_min];
+  x5.textContent = [data.main.temp_min] + '℃';
+
+  let x6 = document.querySelector('span#pressure');
+  x6.textContent = [data.main.pressure] + 'hPa';
 }
 
 function showError(err) {
