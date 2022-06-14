@@ -20,9 +20,7 @@ h1 {
 
 table.a {
     font-size: 130%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10em;
+    
     background-color: rgba(109, 173, 233, 0.547);
     text-align: center;
     border-collapse:  collapse;
@@ -34,24 +32,25 @@ table.b {
     float: left;
     font-size: 130%;
     background-color: rgba(109, 173, 233, 0.547);
-    margin: 0 0 0 0;
     border-collapse:  collapse;
     padding: 5px; 
     
     
 }
 table, tr, td {
-    border: 2px solid black;
-    
-    
+    border: 2px solid black;  
+}
 
-    
+div.text {
+    text-align: center;
 }
 
 div.tables {
-    display: grid;                      /* グリッドレイアウトにする*/
-    grid-template-columns: 1fr; /* 2列にする．幅は 1:2 の比率*/
-    grid-template-rows: 100px 100px;    /* 2行にする．高さはともに 100px */
+    display: grid;        
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 100px 100px;
     grid-gap: 10px;
+    margin: 10px 0 10px 0;
     
 }
+
