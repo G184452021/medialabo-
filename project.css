@@ -7,13 +7,13 @@ body {
     width: auto;
     height: auto;
     margin: 0 1em 0 1em;
-    background-color: #ffffff;
+
 }
 h1 {
-    background-color: rgba(109, 173, 233, 0.547);
+    background-color: #015958;
     height: 2em;
-    margin: 0 0 0 0;
-    color: black;
+    margin: auto;
+    color: white;
     text-align: center;
     font-size: 250%;
 }
@@ -21,7 +21,7 @@ h1 {
 table.a {
     font-size: 130%;
     
-    background-color: rgba(109, 173, 233, 0.547);
+    background-color: #32a1bd9b;
     text-align: center;
     border-collapse:  collapse;
     padding: 10px; 
@@ -31,7 +31,7 @@ table.a {
 table.b {
     float: left;
     font-size: 130%;
-    background-color: rgba(109, 173, 233, 0.547);
+    background-color: #32a1bd9b;
     border-collapse:  collapse;
     padding: 5px; 
     
@@ -43,6 +43,7 @@ table, tr, td {
 
 div.text {
     text-align: center;
+    margin: 10px 0 0 0;
 }
 
 div.tables {
@@ -51,6 +52,7 @@ div.tables {
     grid-template-rows: 100px 100px;
     grid-gap: 10px;
     margin: 10px 0 10px 0;
-    
 }
+
+
 
