@@ -108,12 +108,9 @@ function showResult(resp) {
   if (typeof data === 'string') {
       data = JSON.parse(data);
   }
-  let x = document.querySelector('span#city_name');
-  x.textContent = [data.name];
-  /*
-  let x1 = document.querySelector('span#name');
+  let x1 = document.querySelector('span#city_name');
   x1.textContent = [data.name];
-  */
+  
   let x2 = document.querySelector('span#weather');
   x2.textContent = [data.weather[0].description];
 
